@@ -55,6 +55,36 @@ function App() {
 function NavBar() {
   return (
     <div>
+      <NavLink
+      to="/"
+      style={linkStyles}
+      activeStyle={{
+        background: "navyblue"
+      }}
+      >
+        Home
+      </NavLink>
+
+      <NavLink
+      to="/about"
+      style={linkStyles}
+      activeStyle={{
+        background: "navyblue"
+      }}
+      >
+        About
+      </NavLink>
+
+      <NavLink
+      to="/login"
+      style={linkStyles}
+      activeStyle={{
+        background: "navyblue"
+      }}
+      >
+        Login
+      </NavLink>
+
       <h1>Navigations</h1>
     </div>
   )
