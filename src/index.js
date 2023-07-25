@@ -42,9 +42,19 @@ function App() {
   return <Home />;
 }
 
+function NavBar() {
+  return (
+    <div>
+      <h1>Navigations</h1>
+    </div>
+  )
+
+}
+
 ReactDOM.render(<App />, document.getElementById("root"));
 ReactDOM.render(
   <BrowserRouter>
+  <NavBar />
   <Routes>
     <Route path="/"element={<Home />} />
     <Route path="/about"element={<About />} />
