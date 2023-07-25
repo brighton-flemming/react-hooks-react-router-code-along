@@ -2,52 +2,51 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const linkStyles = {
-    display: "inline-block",
-    width: "50px",
-    padding: "12px",
-    margin:"0 6px 6px",
-    background: "blue",
-    textDecoration: "none",
-    color: "blue",
-  };
+  display: "inline-block",
+  width: "50px",
+  padding: "12px",
+  margin: "0 6px 6px",
+  background: "blue",
+  textDecoration: "none",
+  color: "blue",
+};
 
-  function NavBar() {
-    return (
-      <div>
-        <NavLink
+function NavBar() {
+  return (
+    <div>
+      <NavLink
         to="/"
         style={linkStyles}
         activeStyle={{
-          background: "darkblue"
+          background: "darkblue",
         }}
-        >
-          Home
-        </NavLink>
-  
-        <NavLink
+      >
+        Home
+      </NavLink>
+
+      <NavLink
         to="/about"
         style={linkStyles}
         activeStyle={{
-          background: "darkblue"
+          background: "darkblue",
         }}
-        >
-          About
-        </NavLink>
-  
-        <NavLink
+      >
+        About
+      </NavLink>
+
+      <NavLink
         to="/login"
         style={linkStyles}
         activeStyle={{
-          background: "darkblue"
+          background: "darkblue",
         }}
-        >
-         Login
-        </NavLink>
-  
-        <h1>Navigations</h1>
-      </div>
-    )
-  
-  }
+      >
+        Login
+      </NavLink>
 
-  export default NavBar
+      <h1>Navigations</h1>
+    </div>
+  );
+}
+
+export default NavBar;
