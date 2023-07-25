@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
+
 const linkStyles = {
   display: "inline-block",
   width: "50px",
@@ -48,9 +49,7 @@ function Login() {
   )
 }
 
-function App() {
-  return <Home />;
-}
+
 
 function NavBar() {
   return (
@@ -59,7 +58,7 @@ function NavBar() {
       to="/"
       style={linkStyles}
       activeStyle={{
-        background: "navyblue"
+        background: "darkblue"
       }}
       >
         Home
@@ -69,7 +68,7 @@ function NavBar() {
       to="/about"
       style={linkStyles}
       activeStyle={{
-        background: "navyblue"
+        background: "darkblue"
       }}
       >
         About
@@ -79,10 +78,10 @@ function NavBar() {
       to="/login"
       style={linkStyles}
       activeStyle={{
-        background: "navyblue"
+        background: "darkblue"
       }}
       >
-        Login
+       Login
       </NavLink>
 
       <h1>Navigations</h1>
@@ -91,7 +90,7 @@ function NavBar() {
 
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
 ReactDOM.render(
   <BrowserRouter>
   <NavBar />
